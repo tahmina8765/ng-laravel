@@ -21,6 +21,18 @@
                 margin: 16px 0 0 0;
             }
         </style>
+        <script>
+        var x = 10;
+        var foo = {
+            x: 20,
+            bar: function(){
+                var x = 30;
+                return this.x;
+            }
+        }
+        
+        console.log(foo.bar());
+        </script>
     </head>
     <body>
         @yield('content')
