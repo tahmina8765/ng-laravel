@@ -13,6 +13,12 @@
 
 Route::get('/', 'PagesController@home');
 
+Route::get('/', array('as' => 'home', function()
+{
+    return View::make('home');
+}));
 
-Route::get('/users', 'UsersController@index');
-Route::get('/users/{id}', 'UsersController@show');
+//Route::get('/users', 'UsersController@index');
+//Route::get('/users/{id}', 'UsersController@show');
+//https://github.com/rydurham/Sentinel
+//Route::resource('users', 'UsersController@index');

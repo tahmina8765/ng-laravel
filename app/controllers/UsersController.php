@@ -12,14 +12,10 @@ class UsersController extends \BaseController
     {
 
         $users = User::all();
-
-//    $user = new User;    
-//    $user->username = 'Mehedi';
-//    $user->password = Hash::make('123456');
-//    $user->save();
-
         return View::make('users.index', ['users' => $users]);
     }
+
+   
 
     /**
      * Display the specified resource.
@@ -31,7 +27,6 @@ class UsersController extends \BaseController
     {
         $user = User::find($id);
         return View::make('users.show', ['user' => $user]);
-       
     }
 
 }
