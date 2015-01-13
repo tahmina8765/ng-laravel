@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => null, 'name' => null),
+	'from' => array('address' => 'khatoon.tahmina@genweb2.com', 'name' => 'ng-laravel'),
 
 	/*
 	|--------------------------------------------------------------------------
